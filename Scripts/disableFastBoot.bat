@@ -7,6 +7,8 @@ cls
 
 call "%~dp0Helpers\showTitle.bat" "Disable Fast Startup"
 
+call "%~dp0Helpers\checkElevated.bat"
+
 :: Disable Fast Startup in Windows 11
 echo Disabling Fast Startup...
 
