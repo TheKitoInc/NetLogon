@@ -12,11 +12,11 @@ call "%~dp0Helpers\checkElevated.bat"
 taskkill /F /IM OneDrive.exe
 
 if exist "%SystemRoot%\SysWOW64\OneDriveSetup.exe" (
-    "%SystemRoot%\SysWOW64\OneDriveSetup.exe" /uninstall
+ "%SystemRoot%\SysWOW64\OneDriveSetup.exe" /uninstall
 )
 
 if exist "%SystemRoot%\System32\OneDriveSetup.exe" (
-    "%SystemRoot%\System32\OneDriveSetup.exe" /uninstall
+ "%SystemRoot%\System32\OneDriveSetup.exe" /uninstall
 )
 
 :: Remove startup entries
