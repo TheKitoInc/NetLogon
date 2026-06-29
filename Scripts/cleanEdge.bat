@@ -16,4 +16,6 @@ rd /s /q "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\Code Cache" >nul 2>&1
 rd /s /q "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\GPUCache" >nul 2>&1
 rd /s /q "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\Service Worker\CacheStorage" >nul 2>&1
 
+rundll32.exe InetCpl.cpl,ClearMyTracksByProcess 255
+
 call "%~dp0Helpers\showSuccess.bat"
