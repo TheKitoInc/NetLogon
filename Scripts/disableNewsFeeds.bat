@@ -7,6 +7,8 @@ cls
 
 call "%~dp0Helpers\showTitle.bat" "Disable News and Interests"
 
+taskkill /F /IM explorer.exe
+
 reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Feeds" /v "ShellFeedsTaskbarPreviousViewMode" /t REG_DWORD /d "2" /f
 
 :: Windows 10
