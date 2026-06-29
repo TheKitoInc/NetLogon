@@ -96,6 +96,10 @@ if "%IS_ADMIN%"=="1" (
         call "%BASEDIR%cleanDisk.bat"
     )
 
+    if exist "%BASEDIR%cleanErrorReports.bat" (
+        call "%BASEDIR%cleanErrorReports.bat"
+    )
+
     echo.
     echo Administrator cleanup tasks completed.
 
