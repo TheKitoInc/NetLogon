@@ -5,5 +5,5 @@ echo Success.
 echo.
 
 timeout /t 1 >nul
-
+title 
 cls
