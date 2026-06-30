@@ -5,7 +5,7 @@ cls
 :: MICROSOFT EDGE CACHE
 :: =========================================
 
-call "%~dp0Helpers\showTitle.bat" "Microsoft Edge Cache Cleaner"
+call "%~dp0..\Helpers\showTitle.bat" "Microsoft Edge Cache Cleaner"
 
 echo Cleaning Microsoft Edge cache...
 
@@ -18,4 +18,4 @@ rd /s /q "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\Service Worker\CacheSt
 
 rundll32.exe InetCpl.cpl,ClearMyTracksByProcess 255
 
-call "%~dp0Helpers\showSuccess.bat"
+call "%~dp0..\Helpers\showSuccess.bat"

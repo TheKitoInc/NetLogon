@@ -5,7 +5,7 @@ cls
 :: CHROMIUM CACHE
 :: =========================================
 
-call "%~dp0Helpers\showTitle.bat" "Chromium Cache Cleaner"
+call "%~dp0..\Helpers\showTitle.bat" "Chromium Cache Cleaner"
 
 echo Cleaning Chromium cache...
 
@@ -16,4 +16,4 @@ rd /s /q "%LOCALAPPDATA%\Chromium\User Data\Default\Code Cache" >nul 2>&1
 rd /s /q "%LOCALAPPDATA%\Chromium\User Data\Default\GPUCache" >nul 2>&1
 rd /s /q "%LOCALAPPDATA%\Chromium\User Data\Default\Service Worker\CacheStorage" >nul 2>&1
 
-call "%~dp0Helpers\showSuccess.bat"
+call "%~dp0..\Helpers\showSuccess.bat"

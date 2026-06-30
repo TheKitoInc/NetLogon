@@ -5,9 +5,9 @@ cls
 :: ULTRAVNC LOG CLEANUP
 :: =========================================
 
-call "%~dp0Helpers\showTitle.bat" "UltraVNC Log Cleaner"
+call "%~dp0..\Helpers\showTitle.bat" "UltraVNC Log Cleaner"
 
-call "%~dp0Helpers\checkElevated.bat"
+call "%~dp0..\Helpers\checkElevated.bat"
 
 echo Cleaning UltraVNC logs...
 
@@ -19,4 +19,4 @@ if exist "C:\Program Files (x86)\uvnc bvba\UltraVNC\WinVNC.log" (
 
 net start uvnc_service >nul 2>&1
 
-call "%~dp0Helpers\showSuccess.bat"
+call "%~dp0..\Helpers\showSuccess.bat"
